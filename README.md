@@ -39,7 +39,7 @@ Ecommerce/
 
 ## ▶️ How to Run
 
-1. Clone the repository
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/KuldeepDhuthraj/Ecommerce.git
@@ -49,12 +49,12 @@ git clone https://github.com/KuldeepDhuthraj/Ecommerce.git
 
 3. Open `Home.html` in your web browser.
 
-## 📸 Screenshots
-
-Add screenshots of your website here.
-
 ## 👨‍💻 Author
 
 **Kuldeep Dhuthraj**
 
 GitHub: https://github.com/KuldeepDhuthraj
+
+## 📄 License
+
+This project is licensed under the MIT License.
