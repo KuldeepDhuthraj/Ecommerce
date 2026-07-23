@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./Products.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <script src="./Products.js"></script>
+  </head>
+
+  <body onload="createMultiCards()">
+    <nav class="gridContainer">
+      <section class="flex-container">
+        <h1>AI-Mart</h1>
+      </section>
+
+      <section class="flex-container" style="justify-content: flex-start">
+        <a href="Home.html">Home</a>
+        <a href="Profile.html">Profile</a>
+        <a href="Products.html">Products</a>
+        <a href="ContactUs.html">ContactUs</a>
+      </section>
+
+      <section class="icon flex-container">
+        <a href="Cart.html">
+          <i class="bi bi-cart-check-fill" style="color: green"></i>
+        </a>
+        <button
+          type="button"
+          style="background-color: red; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer;"
+        >
+          Logout
+        </button>
+      </section>
+    </nav>
+
+    <section id="container">
+      <div class="flex-Item" onclick="filterProductsBasedOnCategory('all')">
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/035/546/967/large_2x/all-letter-logo-design-inspiration-for-a-unique-identity-modern-elegance-and-creative-design-watermark-your-success-with-the-striking-this-logo-vector.jpg"
+          alt=""
+          width="70"
+          height="70"
+        />
+        <h3>All</h3>
+      </div>
+
+      <div
+        class="flex-Item"
+        onclick="filterProductsBasedOnCategory('electronics')"
+      >
+        <img
+          src="https://tse4.mm.bing.net/th/id/OIP.EE_ndsO6kcX6VmcLnBW97gHaEJ?rs=1&pid=ImgDetMain&o=7&rm=3"
+          alt=""
+          width="70"
+          height="70"
+        />
+        <h3>Electronics</h3>
+      </div>
+
+      <div
+        class="flex-Item"
+        onclick="filterProductsBasedOnCategory(`men's clothing`)"
+      >
+        <img
+          src="https://media.gq-magazine.co.uk/photos/6513fc12401a20d55139ab8b/16:9/w_1280,c_limit/best-clothing-brands-for-men.jpg"
+          alt=""
+          width="70"
+          height="70"
+        />
+        <h3>Men's</h3>
+      </div>
+
+      <div
+        class="flex-Item"
+        onclick="filterProductsBasedOnCategory(`women's clothing`)"
+      >
+        <img
+          src="https://th.bing.com/th/id/R.c1e8b76ccc9fc699358fe0a0bdb63b34?rik=JqSIy9p9u%2b91WA&riu=http%3a%2f%2fell.h-cdn.co%2fassets%2f16%2f14%2f1600x800%2flandscape-1459974569-female-designers.jpg&ehk=EOoMjqEdxSRwLj9M64KsGEl1tQ59k469zvcYSvYTRpc%3d&risl=&pid=ImgRaw&r=0"
+          alt=""
+          width="70"
+          height="70"
+        />
+        <h3>Women's</h3>
+      </div>
+
+      <div class="flex-Item" onclick="filterProductsBasedOnCategory('kids')">
+        <img
+          src="https://images.pexels.com/photos/1620760/pexels-photo-1620760.jpeg?cs=srgb&dl=pexels-victoria-akvarel-1620760.jpg&fm=jpg"
+          alt=""
+          width="70"
+          height="70"
+        />
+        <h3>Kids</h3>
+      </div>
+
+      <div
+        class="flex-Item"
+        onclick="filterProductsBasedOnCategory('furniture')"
+      >
+        <img
+          src="https://img.staticmb.com/mbcontent/images/crop/uploads/2022/7/What-is-IKEA-Furniture_0_1200.jpg"
+          alt=""
+          width="70"
+          height="70"
+        />
+        <h3>Furniture</h3>
+      </div>
+
+      <div
+        class="flex-Item"
+        onclick="filterProductsBasedOnCategory('cosmetic')"
+      >
+        <img
+          src="https://png.pngtree.com/background/20230414/original/pngtree-makeup-skin-care-products-cosmetics-beauty-photography-advertising-background-picture-image_2424108.jpg"
+          alt=""
+          width="70"
+          height="70"
+        />
+        <h3>Cosmetic</h3>
+      </div>
+    </section>
+
+    <section id="products"></section>
+  </body>
+</html>

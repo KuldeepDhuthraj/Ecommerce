@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./Cart.css" />
+    <script src="./Cart.js"></script>
+  </head>
+
+  <body onload="getCartProducts()">
+    <nav class="gridContainer">
+      <section class="flex-container">
+        <h1>AI-Mart</h1>
+      </section>
+
+      <section class="flex-container" style="justify-content: flex-start">
+        <a href="Home.html">Home</a>
+        <a href="Profile.html">Profile</a>
+        <a href="Products.html">Products</a>
+        <a href="ContactUs.html">ContactUs</a>
+      </section>
+
+      <section class="icon flex-container">
+        <a href="Cart.html">
+          <i class="bi bi-cart-check-fill" style="color: green"></i>
+        </a>
+        <button
+          type="button"
+          style="background-color: red; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer;"
+        >
+          Logout
+        </button>
+      </section>
+    </nav>
+
+    <section id="cartsData">
+      <table width="100%">
+        <thead>
+          <tr>
+            <th>IMAGE</th>
+            <th>NAME</th>
+            <th>PRICE</th>
+            <th>QTY</th>
+            <th>ACTION</th>
+          </tr>
+        </thead>
+
+        <tbody align="center"></tbody>
+      </table>
+    </section>
+  </body>
+</html>

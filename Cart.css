@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+}
+.gridContainer {
+  width: 100%;
+  height: 90px;
+  box-shadow: 0 0 10px red;
+  display: grid;
+  grid-template-columns: 40% 45% 15%;
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container h1 {
+  font-size: 52px;
+  color: darkgreen;
+}
+.flex-container a {
+  margin-right: 50px;
+  font-size: 19px;
+  text-decoration: none;
+}
+.icon i {
+  font-size: 27px;
+}
+.icon a {
+  margin-right: 30px;
+}
+
+#cartsData {
+  width: 1000px;
+  box-shadow: 0 0 10px black;
+  height: 450px;
+  margin: 30px auto;
+  overflow-y: scroll;
+}
+
+th {
+  padding: 20px;
+  color: white;
+  background-color: black;
+}
+tbody {
+  overflow-y: scroll;
+}
+tbody img {
+  border-radius: 50%;
+}
+tbody button {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 13px 30px;
+  border-radius: 10px;
+}
